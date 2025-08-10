@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+
+}
+
+.main-nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background: #1f2937;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.main-nav .brand{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a{
+    color: #e6eef8;
+    text-decoration: none;
+    font-size: 0.95rem;      
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    max-width: 640px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.card{
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(31, 41, 55, 0.    08);
+}
+
+#quote{
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+    transition: transform 
+    .22s ease, opacity .22s ease;
+    opacity: 1;
+}
+
+.fade{
+    opacity : 0.15;
+    transform: translateY(-8px);
+}
+
+/*Button*/
+#quoteBtn{
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#quoteBtn:hover {filter: brightness(.95);}
+
+/* MEdia */
+@media (max-width: 480px){
+
+    .nav-links{display: none;}
+    .container{margin-top: 40px;}
+
+}
